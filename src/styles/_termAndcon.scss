@@ -1,0 +1,38 @@
+.term-condition{
+    padding: 2px 30px 20px 30px;
+    text-align: justify;
+   .Start-tile {
+  font-weight: 500;
+   } 
+   .Start-tile span{
+       color:'red'
+   }
+   .MuiTypography-root{
+       margin: 30px;
+   }
+ .term-title{
+     font-weight: 500;
+ }
+ .Start-tile{
+    margin-left: 20px;
+    margin-top: 82px;
+    }
+    .Start-tile span{
+       color:rgb(40, 209, 130);
+       font-weight: 500;
+        }
+
+        @media screen and (max-width:600px){
+            text-align: left;
+            .Start-tile{
+                margin-left: 20px;
+                margin-top: 82px;
+                font-size: 17px;
+                }
+                .Start-tile span{
+                   color:rgb(40, 209, 130);
+                   font-weight: 500;
+                    }
+        }
+
+}

@@ -1,0 +1,23 @@
+// libraries
+@import "~bootstrap/scss/bootstrap.scss";
+
+// base
+@import "base";
+
+@import "auth";
+@import "pitch";
+@import "dashboard";
+@import "contact";
+@import "notification";
+@import "detailsPitch";
+@import 'connection';
+@import 'termAndcon';
+@import 'legal';
+@import 'privacy';
+@import "NotVerified";
+
+@import "investor";
+@import "profile";
+@import "header";
+@import "request";
+@import "chat";

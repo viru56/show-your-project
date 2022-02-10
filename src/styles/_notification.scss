@@ -1,0 +1,11 @@
+.notification {
+  min-height: 72.5vh;
+  .message-box {
+    background: #f3fdff;
+    .message-text {
+        display: flex;
+      margin: 10px;
+      color: #606060;
+    }
+  }
+}

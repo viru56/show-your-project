@@ -1,0 +1,111 @@
+.Profile {
+  .tab-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    .tabs {
+      .Mui-selected {
+        background: #f0f0f0;
+        color: #000;
+      }
+      .MuiTabs-indicator {
+        display: none;
+      }
+      .tab {
+        min-height: 50px;
+        outline: none;
+        span {
+          display: block;
+          text-align: left;
+        }
+        .tab-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .security-tab,
+  .notification-tab,
+  .profile-tab {
+    width: 100%;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 0 30px;
+    .image-card {
+      height: 170px;
+      width: 200px;
+      background: #ccc;
+      text-align: center;
+      cursor: pointer;
+    }
+    .multi-select {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 56px;
+      padding: 18.5px 14px;
+      .MuiSelect-select:focus {
+        background-color: #fff;
+      }
+      .MuiSelect-icon {
+        right: 7px;
+      }
+    }
+    .divider {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    .profile-form {
+      .MuiInput-underline:before,
+      .MuiInput-underline:after {
+        border-bottom: 0;
+      }
+      .MuiInputBase-root.Mui-disabled {
+        color: #212529;
+        .MuiSelect-icon {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.Profile-Details-Page {
+  .paper {
+    .header {
+      background: #a18e8e;
+      height: 120px;
+      padding: 30px;
+      .user-photo {
+        width: 150px;
+        height: 150px;
+        background: #212529;
+        border-radius: 50%;
+        overflow: hidden;
+        .image {
+          width: 100%;
+          // height: 150px;
+          // border-radius: 50%;
+        }
+        .user-icon {
+          width: 150px;
+          height: 150px;
+          color: #fff;
+        }
+      }
+    }
+    .main{
+      padding: 60px 30px 20px 30px;
+      .rating {
+        background: #f5f5f5;
+        padding: 7px 16px 0 16px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Profile {
+    .tab-container {
+      margin: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.privacy{
+padding: 2px 30px 20px 30px;
+   text-align: justify;
+    .MuiTypography-root{
+        margin: 30px;
+    
+     }
+     .title-font{
+         font-weight: 600;
+     }
+
+     .Start-tile{
+        margin-left: 20px;
+        margin-top: 82px;
+        }
+        .Start-tile span{
+           color:rgb(40, 209, 130);
+           font-weight: 500;
+            }
+        @media screen and (max-width:600px){
+            text-align: left;
+        }
+
+}

@@ -1,0 +1,207 @@
+.auth {
+  overflow: hidden;
+  .MuiFormLabel-asterisk {
+    display: none;
+  }
+  .hidden{
+    display: hidden;
+  }
+  input:-webkit-autofill {
+    box-shadow: 200px 200px 100px white inset;
+    border-radius: 9px;
+    padding-top: 23px;
+  }
+  .registrationForm {
+    legend {
+      font-size:12px !important;
+    }
+  }
+ 
+
+  background-color: #383838;
+  background-image: url("../assets/images/authbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 100vh;
+  .multi-select:hover {
+    border-color: rgba(0, 0, 0, 0.87);
+  }
+
+  .multi-select {
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0 0 10px 10px;
+    label {
+      padding: 0;
+      background: #fff;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: 0;
+    }
+    .MuiSelect-select:focus {
+      background-color: #fff;
+    }
+    .MuiInput-underline:before {
+      border-bottom: 0;
+    }
+    .MuiInput-underline:after {
+      border-bottom: 0;
+    }
+  }
+  .mw500 {
+    max-width: 550px;
+    //background: #fff;
+    opacity: 0.9;
+    border-radius: 4px;
+  }
+  .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 450px;
+    margin-top: 70px;
+  }
+
+  .or {
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    line-height: 0.1em;
+    margin: 20px auto;
+    color: #fff;
+    span {
+      color: #fff;
+      padding: 0 10px;
+      background: #5e5e5e;
+    }
+  }
+  .paper {
+    margin: 60px 10px 10px 10px;
+    .title {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .avatar {
+      cursor: pointer;
+    }
+  }
+  .role-card {
+    max-width: 350px;
+    background: #f5f5f5;
+    margin-top: 20%;
+    height: 350px;
+    .legend {
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 20px 0;
+    }
+  }
+  .image-card {
+    height: 170px;
+    width: 200px;
+    background: #ccc;
+    text-align: center;
+    cursor: pointer;
+  }
+  .d-rtl {
+    direction: rtl;
+  }
+  .MuiTextField-root {
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .MuiLink-root {
+    color: #1B71FB;
+  }
+  .login-button {
+    background-color: #1B71FB;
+    color: white;
+    padding: 8px 40px 8px 40px;
+    outline: none;
+  }
+  .MuiButton-contained:hover {
+    background-color: #1B71FB;
+    color: white;
+  }
+  .MuiButton-contained.Mui-disabled {
+    background-color: gray;
+  }
+
+  .btn-line {
+    width: 20%;
+    color: #fff;
+    background-color: #fff;
+  }
+  .subscription {
+    .free-trial {
+      background-color: #1B71FB;
+      margin-left: 215px;
+    }
+    .subscription-text {
+      margin-left: 42px;
+    }
+    .free-trial-title {
+      padding-left: 29px;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    .card {
+      min-width: 200px;
+      .card-content {
+        min-height: 175px;
+        .popular {
+          padding: 4px;
+          border-radius: 4px;
+          color: #fff;
+          background: #1a5749;
+        }
+      }
+      .action-btn {
+        margin: 10px auto;
+        border-color: #1a5749;
+        color: #1a5749;
+        outline: none;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .free-trial {
+        background-color: #1B71FB;
+        margin-left: 0px;
+      }
+      .subscription-text {
+        margin-left: 0px;
+      }
+      .free-trial-title {
+        padding-left: 0px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .subtitle {
+    color: #fff;
+    background: #1B71FB;
+    padding: 5px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .auth {
+    .show-form {
+      display: none;
+    }
+    .paper {
+      margin: 20px 10px;
+      text-align: center;
+    }
+  }
+}

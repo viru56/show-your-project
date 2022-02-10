@@ -1,0 +1,128 @@
+.DashboardPage {
+  padding: 0 1rem;
+  overflow-y: hidden;
+  .create-new-idea-btn {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ff7043;
+    border-radius: 31px;
+  }
+  .my-ideas {
+    border: 1px solid #ccc;
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .multi-select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    label {
+      padding: 0 5px;
+      background: #fff;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: 0;
+    }
+    .MuiSelect-outlined.MuiSelect-outlined {
+      padding-left: 8px;
+    }
+    .MuiInput-underline:before {
+      border-bottom: 0;
+    }
+    .MuiInput-underline:after {
+      border-bottom: 0;
+    }
+  }
+  .idea-card {
+    width: 350px;
+    position: relative;
+    min-height: 490px;
+    border-radius: 15px;
+    .title {
+      font-weight: 600;
+    }
+    .ideaBoxButton {
+      font-weight: bold;
+      font-size: 0.9em;
+      color: #fff;
+      padding: 8px 0px;
+    }
+    .idea-image {
+      object-fit: contain;
+      padding: 0px 10px;
+      border-radius: 7%;
+    }
+    .icons {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      display: grid;
+      background: #f7f7f7;
+      padding: 15px 5px;
+      border-radius: 20px;
+      .icon {
+        cursor: pointer;
+      }
+      .icon:hover {
+        color: #fff;
+        background: #000;
+        box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+          0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+      }
+      .icon-bottom:hover {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .icon-top:hover {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+    .title {
+      cursor: pointer;
+      span {
+        font-size: 0.7rem;
+        float: right;
+      }
+    }
+    .idea-card-tooltip {
+      background-color: #1b71fb;
+    }
+    .complete-pitch-link:hover {
+      text-shadow: 1px 1px 1px #000;
+    }
+  }
+}
+
+.AdminDashboardPage {
+  overflow-y: hidden;
+  .main {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    .seleted {
+      background: #ccc;
+    }
+    .user-details {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #eee;
+      .user-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .accept {
+      background-color: #1b71fb;
+      border-color: #1b71fb;
+      color: #fff;
+    }
+    .reject {
+      border-color: #1a5749;
+      background-color: #1a5749;
+      color: #fff;
+    }
+  }
+}

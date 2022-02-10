@@ -1,0 +1,58 @@
+.legal{
+   
+    margin-top: 18px;
+.main-div{
+    html{scroll-behavior: smooth;}
+       .MuiLink-root{
+           //background-color:#cbcdd0;
+           color: rgb(8, 8, 8);
+           padding: 10px;
+           font-size: 16px;
+           border-radius: 4px;
+       }
+       .MuiExpansionPanelSummary-root{
+           margin:10px
+       }
+      .left-div{
+          position: fixed;
+          top: 120px;
+          z-index: 999;
+          color: red;
+      }
+      .left-div ul {
+          list-style: none;
+         
+      }
+   
+      @media screen and ( max-width: 600px){
+        .left-div{
+            margin-top: -121px;
+            margin-bottom: 1rem;
+            background-color: #ffffff;
+            z-index: 9999999999999;
+            width: 100%;
+            
+        }
+     
+    }
+    .is-active{
+        background-color: #edefea;   
+        border-radius: 2px;
+        color: #383636;        
+    }
+ .inactive{
+     color:333333;
+     display: block;
+     padding: 4px 30px;
+     margin-top: 10px;
+     
+ }
+ .inactive :focus{
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px;
+}
+      
+}
+    
+}

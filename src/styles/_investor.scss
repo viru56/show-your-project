@@ -1,0 +1,62 @@
+.filter-section {
+  .filter-typography {
+    flex-grow: 1;
+    display: flex;
+    min-height: 340px;
+    min-width: 360px;
+    .filter-tabs {
+      border-right: 1px solid #ccc;
+      .MuiTab-root {
+        outline: none;
+        border-bottom: 1px solid #ccc;
+      }
+      .Mui-selected {
+        background: #eee;
+      }
+      .MuiTabs-indicator {
+        display: none;
+      }
+    }
+    .categories-tab {
+      display: flex;
+      padding: 20px;
+      .categories-tab-list {
+        max-height: 340px;
+        overflow: scroll;
+        max-width: 315px;
+        flex-wrap: nowrap;
+      }
+    }
+    .geography-tab {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      .country,
+      .state,
+      .city {
+        width: 200px;
+        padding-bottom: 10px;
+      }
+    }
+    .collaboration-tab {
+      width: 200px;
+      padding: 20px;
+      .collaboration-range-slider {
+        padding-top: 50px;
+        margin-left: 20px;
+        .MuiSlider-rail,
+        .MuiSlider-track {
+          height: 8px;
+          border-radius: 4px;
+        }
+        .MuiSlider-thumb {
+          height: 24px;
+          width: 24px;
+          margin-top: -8px;
+          margin-left: -12px;
+        }
+      }
+    }
+  }
+}

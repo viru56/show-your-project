@@ -1,0 +1,140 @@
+.pitch {
+  .Mui-error {
+    color: #f44336;
+    padding-right: 12px;
+    padding-bottom: -3px;
+  }
+  .MuiFormLabel-asterisk {
+    visibility: hidden;
+  }
+  .switchBase-custom{
+    color: #1a5749;
+  }
+  .switchTrack-custom{
+    background-color: #1a5749;
+  }
+  .help-section {
+    text-align: justify;
+    .MuiTypography-root {
+      padding: 15px;
+    }
+    .start-title {
+      font-weight: 600;
+    }
+    .idea-img {
+      align-items: center;
+      width: 50%;
+      height: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+      text-align: left;
+      .idea-img {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .mw-4 {
+    max-width: 400px;
+  }
+  .mw-6 {
+    max-width: 600px;
+  }
+  .min-width-6 {
+    min-width: 600px;
+  }
+
+  .title {
+    font-weight: 500;
+    border-bottom: 1.3px solid;
+    padding-bottom: 10px;
+  }
+  .multi-select:hover {
+    border-color: rgba(0, 0, 0, 0.87);
+  }
+  .multi-select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 0 10px 10px;
+    label {
+      padding: 0;
+      background: #fff;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: 0;
+    }
+    .MuiInput-underline:before {
+      border-bottom: 0;
+    }
+    .MuiInput-underline:after {
+      border-bottom: 0;
+    }
+    .MuiSelect-select:focus {
+      background-color: inherit;
+    }
+  }
+  .card {
+    cursor: pointer;
+    text-align: center;
+    max-width: 280px;
+    height: 350px;
+    margin-bottom: 20px;
+    background-image: url("../assets/images/quick-pitch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .card-content {
+      height: 275px;
+    }
+    .card-action {
+      justify-content: center;
+    }
+  }
+  .quick-card {
+    background-image: url("../assets/images/quick-pitch.png");
+  }
+  .detail-card {
+    background-image: url("../assets/images/detailed-pitch.png");
+  }
+  .upload-card {
+    background-image: url("../assets/images/own-pitch.png");
+  }
+  .or {
+    text-align: center;
+    border-bottom: 1px solid;
+    line-height: 0.1em;
+    margin: 20px auto;
+    span {
+      background: #fff;
+      padding: 0 10px;
+    }
+  }
+  .file-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    .file-name {
+      margin: 5px;
+      height: 50px;
+      .chip-image{
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+  .file-list:hover {
+    border-color: #000;
+  }
+}
+.upload-btn {
+  .MuiButton-containedSizeLarge {
+    padding: 15px 22px;
+  }
+  .border-red {
+    border: 1px solid red;
+  }
+}
