@@ -240,13 +240,13 @@ class Register extends PureComponent {
         </Grid>
         <Grid item xs={12} sm={8} md={5}>
           <div className="paper mw500">
-            <Typography
+            {/* <Typography
               variant="subtitle2"
               gutterBottom
               style={{ color: "#fff", marginBottom: "30px" }}
             >
               SIGN IN USING
-            </Typography>
+            </Typography> */}
             <form className="form" noValidate onSubmit={this.handleSubmit}>
               <div className="social">
                 {/* <Avatar
@@ -255,12 +255,12 @@ class Register extends PureComponent {
                   className="avatar"
                   onClick={this.signInWithFacebook}
                 /> */}
-                <Avatar
+                {/* <Avatar
                   alt="google"
                   src={google}
                   className="avatar"
                   onClick={this.signInWithGoogle}
-                />
+                /> */}
                 {/* <Avatar
                   alt="twitter"
                   src={twitter}
@@ -278,9 +278,9 @@ class Register extends PureComponent {
                   <Avatar alt="linkedIn" src={linkedin} className="avatar" />
                 </LinkedIn> */}
               </div>
-              <p className="or">
+              {/* <p className="or">
                 <span>OR</span>
-              </p>
+              </p> */}
               <Typography
                 variant="subtitle2"
                 gutterBottom

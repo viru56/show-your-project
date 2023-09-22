@@ -22,7 +22,7 @@ const FormFields = ({ id, formData, change }) => {
             value={formData[id].value}
             onChange={event => change({ id, value: event.target.value })}
             helperText={formData[id].validationMessage}
-            error={ormData[id].touched && !formData[id].valid}
+            error={formData[id].touched && !formData[id].valid}
           />
         );
         break;
@@ -44,7 +44,7 @@ const FormFields = ({ id, formData, change }) => {
             value={formData[id].value}
             onChange={event => change({ id, value: event.target.value })}
             helperText={formData[id].validationMessage}
-            error={ormData[id].touched && !formData[id].valid}
+            error={formData[id].touched && !formData[id].valid}
           />
         );
         break;
@@ -64,7 +64,7 @@ const FormFields = ({ id, formData, change }) => {
             value={formData[id].value}
             onChange={event => change({ id, value: event.target.value })}
             helperText={formData[id].validationMessage}
-            error={ormData[id].touched && !formData[id].valid}
+            error={formData[id].touched && !formData[id].valid}
           >
             {formData[id].options.map((item, index) => (
               <MenuItem key={index} value={item.value}>

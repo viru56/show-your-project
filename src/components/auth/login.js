@@ -223,13 +223,13 @@ class Login extends PureComponent {
               <hr style={{ width: "80%", borderColor: "#fff" }} /> */}
               </div>
               <form className="form" noValidate onSubmit={this.handleSubmit}>
-                <Typography
+                {/* <Typography
                   variant="subtitle1"
                   gutterBottom
                   style={{ marginLeft: '15px', color: "#fff" }}
                 >
                   Login Using
-              </Typography>
+              </Typography> */}
                 <div className="social">
                   {/* <Avatar
                     alt="facebook"
@@ -237,12 +237,12 @@ class Login extends PureComponent {
                     className="avatar"
                     onClick={this.signInWithFacebook}
                   /> */}
-                  <Avatar
+                  {/* <Avatar
                     alt="google"
                     src={google}
                     className="avatar"
                     onClick={this.signInWithGoogle}
-                  />
+                  /> */}
                   {/* <Avatar
                   alt="twitter"
                   src={twitter}
@@ -260,9 +260,9 @@ class Login extends PureComponent {
                     <Avatar alt="linkedIn" src={linkedin} className="avatar" />
                   </LinkedIn> */}
                 </div>
-                <p className="or">
+                {/* <p className="or">
                   <span>OR</span>
-                </p>
+                </p> */}
                 <TextField
                   variant="filled"
                   margin="normal"

@@ -861,10 +861,10 @@ export const sendEmailVerification = async () => {
 export const contactUs = async (data) => {
   try {
     data.to = firebaseConfig.sendContactUsMailTo;
-    const sendMail = firebaseFunctions.httpsCallable(
-      firebaseConfig.sendMailFunctionName
-    );
-    await sendMail(data);
+    // const sendMail = firebaseFunctions.httpsCallable(
+    //   firebaseConfig.sendMailFunctionName
+    // );
+    // await sendMail(data);
     return true;
   } catch (error) {
     console.log(error);
