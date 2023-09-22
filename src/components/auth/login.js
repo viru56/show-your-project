@@ -85,6 +85,7 @@ class Login extends PureComponent {
         email: this.state.formData.email.value.toLowerCase(),
         password: this.state.formData.password.value
       });
+      
       if (this.props.User.error) {
         if (this.props.User.error.title === "Email Verification Pending") {
           this.props.history.push("/emailVerification");

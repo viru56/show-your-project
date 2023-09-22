@@ -24,7 +24,7 @@ import axios from "axios";
 // login user
 export const signIn = async (data) => {
   try {
-    const result = await firebase.auth().signInWithEmailAndPassword(data.email, data.password);
+    await firebase.auth().signInWithEmailAndPassword(data.email, data.password);
     const doc = await findUser(data.email);
     if (doc.exists) {
       const user = doc.data();
@@ -51,19 +51,19 @@ export const signIn = async (data) => {
           },
         };
       }
-      if (!result.user.emailVerified ) {
-        return {
-          type: SIGN_IN,
-          payload: {
-            error: {
-              title: "Email Verification Pending",
-              message:
-                "Your email address is not verified, please check your mail to verify.",
-            },
-            user: doc.data(),
-          },
-        };
-      }
+      // if (!result.user.emailVerified ) {
+      //   return {
+      //     type: SIGN_IN,
+      //     payload: {
+      //       error: {
+      //         title: "Email Verification Pending",
+      //         message:
+      //           "Your email address is not verified, please check your mail to verify.",
+      //       },
+      //       user: doc.data(),
+      //     },
+      //   };
+      // }
       // update last loggedIn as now
       updateUser({
         email: data.email,
